@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Todo() {
+function Todo({text}) {
     return (
         <div className='todo'>
-           <li></li> 
+          <li>{text}</li> 
         </div>
     )
 }

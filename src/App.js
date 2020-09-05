@@ -10,12 +10,10 @@ const App=() => {
   return (
     <div className="App">
      <Header />
-  <h2>{inputText}</h2>
      <Form todos={todo} setinput={setInputText} addList={setTodo} inputText={inputText} />
-     <TodoList />
+     <TodoList todos={todo} />
      </div>
-    
-  );
+    );
 }
 
 export default App;

@@ -2,12 +2,12 @@ import React from 'react'
 
 const Form=({setinput,todos,addList,inputText}) => {
   const inputTextHandeller=(e)=>{
-    console.log(e.target.value)
+    
     setinput(e.target.value)
   }
   const addTodo=(e) => {
       e.preventDefault();
-      addList([...todos,{text:inputText,completed:false,id:Math.random()*1000}])
+      addList([...todos, {text:inputText , completed:false, id: Math.random()*1000 } ])
       setinput('')
   }
     return (
@@ -29,4 +29,4 @@ const Form=({setinput,todos,addList,inputText}) => {
     )
 }
 
-export default Form
+export default Form;
